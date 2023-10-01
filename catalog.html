@@ -66,19 +66,19 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="checkbox" name="infrastructure" checked>
+                <input class="option-point" type="checkbox" name="pool" checked>
                   Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="checkbox" name="infrastructure" checked>
+                <input class="option-point" type="checkbox" name="parking" checked>
                   Парковка
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="checkbox" name="infrastructure">
+                <input class="option-point" type="checkbox" name="wi-fi">
                   Wi-Fi
               </label>
             </li>
@@ -90,27 +90,159 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="radio" name="type-home" checked>
+                <input class="option-point" type="radio" name="hotel" checked>
                   Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="radio" name="type-home">
+                <input class="option-point" type="radio" name="motel">
                   Мотель
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="option">
-                <input class="option-point" type="radio" name="type-home">
+                <input class="option-point" type="radio" name="apartament">
                   Апартаменты
               </label>
             </li>
         </fieldset>
-
       </section>
 
-      <section class="mailing">
+      <section class="catalog">
+        <span class="result">
+          Найдено гостиниц: 38
+        </span>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярное</option>
+        </select>
+        <div class="view">
+          <a class="button-view button-active" href="#">
+            <span class="visually-hidden">
+              Показать карточки
+            </span>
+          </a>
+          <a class="button-view" href="#">
+            <span class="visually-hidden">
+              <!--Придумать название иконки-->
+            </span>
+          </a>
+          <a class="button-view" href="#">
+            <span class="visually-hidden">
+              Показать список
+            </span>
+          </a>
+        </div>
+        <ul class="card-list">
+          <li class="card">
+            <a class="card-link" href="#">
+              <img src="#" alt="Звездное небо между скал">
+            </a>
+            <a class="card-link" href="#">
+            <h3>
+              Amara Resort & Spa
+            </h3>
+            </a>
+            <span class="card-content">
+              Гостиница
+            </span>
+            <span class="card-price">
+              От 4000 ₽
+            </span>
+            <a class="card-button" href="#">
+              подробнее
+            </a>
+            <button class="card-button" type="button">
+              в избранное
+            </button>
+            <span class="rating">
+              Рейтинг: 8,5
+            </span>
+          </li>
+
+          <li class="card">
+            <a class="card-link" href="#">
+              <img src="#" alt="Радуга в горах на закате">
+            </a>
+            <a class="card-link" href="#">
+            <h3>
+              Villas at Poco Diablo
+            </h3>
+            </a>
+            <span class="card-content">
+              Гостиница
+            </span>
+            <span class="card-price">
+              От 5000 ₽
+            </span>
+            <a class="card-button" href="#">
+              подробнее
+            </a>
+            <button class="card-button button-click" type="button">
+              в избранном
+            </button>
+            <span class="rating">
+              Рейтинг: 9,2
+            </span>
+          </li>
+
+            <li class="card">
+              <a class="card-link" href="#">
+                <img src="#" alt="Красные скалы на закате">
+              </a>
+              <a class="card-link" href="#">
+              <h3>
+                Desert Quail Inn
+              </h3>
+              </a>
+              <span class="card-content">
+                Гостиница
+              </span>
+              <span class="card-price">
+                От 2500 ₽
+              </span>
+              <a class="card-button" href="#">
+                подробнее
+              </a>
+              <button class="card-button" type="button">
+                в избранное
+              </button>
+              <span class="rating">
+                Рейтинг: 6,9
+              </span>
+            </li>
+
+            <li class="card">
+              <a class="card-link" href="#">
+                <img src="#" alt="Красные скалы под звездным небом">
+              </a>
+              <a class="card-link" href="#">
+                <h3>
+                  GreenTree Inn
+                </h3>
+              </a>
+              <span class="card-content">
+                Гостиница
+              </span>
+              <span class="card-price">
+                От 1500 ₽
+              </span>
+              <a class="card-button" href="#">
+                подробнее
+              </a>
+              <button class="card-button" type="button">
+                в избранное
+              </button>
+              <span class="rating">
+                Рейтинг: 5,0
+              </span>
+            </li>
+          </ul>
+      </section>
+
+      <section class="mailing mailing-inner">
         <h2 class="mailing-title">
           Подпишитесь на рассылку
         </h2>
@@ -124,7 +256,6 @@
           </button>
         </form>
       </section>
-    </main>
     </main>
 
     <footer class="footer-page">
