@@ -51,6 +51,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная страница</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -59,54 +60,77 @@
             </a>
           </li>
         </ul>
-        <fieldset class="catalog-filter">
-          <legend class="catalog-filter-title">
-            Инфраструктура:
-          </legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="checkbox" name="pool" checked>
+
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-title">
+              Инфраструктура:
+            </legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="checkbox" name="pool" checked>
                   Бассейн
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="checkbox" name="parking" checked>
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="checkbox" name="parking" checked>
                   Парковка
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="checkbox" name="wi-fi">
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="checkbox" name="wi-fi">
                   Wi-Fi
-              </label>
-            </li>
-        </fieldset>
-        <fieldset class="catalog-filter">
-          <legend class="catalog-filter-title">
-            Тип жилья:
-          </legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="radio" name="hotel" checked>
+                </label>
+              </li>
+          </fieldset>
+
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-title">
+              Тип жилья:
+            </legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="radio" name="type-home" value="hotel" checked>
                   Гостиница
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="radio" name="motel">
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="radio" name="type-home" value="motel">
                   Мотель
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="option">
-                <input class="option-point" type="radio" name="apartament">
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="option">
+                  <input class="option-point" type="radio" name="type-home" value="apartament">
                   Апартаменты
-              </label>
-            </li>
-        </fieldset>
+                </label>
+              </li>
+          </fieldset>
+
+          <div class="slider">
+            <h2 class="slider-title">Стоимость, ₽:</h2>
+            <label class="slider-from">
+              <input class="slider-min" type="number" placeholder="0" value="0">
+              от
+            </label>
+            <label class="slider-to">
+              <input class="slider-max" type="number" placeholder="9000" value="9000">
+              до
+            </label>
+            <div class="range">
+              <input class="range-min" type="range" min="0" max="15000" value="0" step="100">
+              <input class="range-max" type="range" min="0" max="15000" value="9000" step="100">
+            </div>
+          </div>
+
+          <button class="button button-filter" type="button">Показать</button>
+          <a class="reset" href="#">Сбросить</a>
+        </form>
       </section>
 
       <section class="catalog">
