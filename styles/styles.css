@@ -18,6 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
+  font-weight: 400;
   line-height: 21px;
   color: #000000;
   background-color: #FFFFFF;
@@ -30,4 +31,133 @@ body {
   color: #000000;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.main-index {
+  background-image: url("../images/hero.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.content {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-key {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-paint {
+  background-color: #83b3d333;
+}
+
+.welcome-paint {
+  background-color: #82b2d32f;
+}
+
+.subscribe {
+  color: #ffffff;
+  background-image: url("../images/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-inner {
+  color: #000000;
+  background-image: none;
+}
+
+.phone {
+  font-family: PT Sans;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.filter {
+  color: #ffffff;
+  background-image: url("../images/filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.filter-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.option-point {
+  line-height: 23px;
+}
+
+.result {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-active {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-page {
+  font-size: 22px;
+  line-height: 26px;
 }
