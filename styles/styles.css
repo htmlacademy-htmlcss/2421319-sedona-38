@@ -24,6 +24,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .main-index {
   text-align: center;
 }
@@ -160,13 +164,6 @@ body {
   background: none;
 }
 
-.phone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  text-decoration: none;
-}
-
 .filter {
   color: #ffffff;
   background-image: url("../images/filter.jpg");
@@ -237,7 +234,11 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
-
+/*
+.field {
+  padding: 12px 20px;
+}
+*/
 .social {
   color: #82B3D3;
 }
@@ -252,4 +253,39 @@ body {
 
 .social:active {
   color: #68A2CA4D;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.phone:hover {
+  color: #756157;
+}
+
+.phone:focus {
+  color: #756157;
+}
+
+.phone:active {
+  color: #7561574D;
+}
+
+.logo-footer {
+  color: #000000;
+}
+
+.logo-footer:hover {
+  color: #756157;
+}
+
+.logo-footer:focus {
+  color: #756157;
+}
+
+.logo-footer:active {
+  color: #7561574D;
 }
