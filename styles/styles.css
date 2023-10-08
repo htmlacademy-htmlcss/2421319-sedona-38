@@ -237,3 +237,19 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
+
+.social {
+  color: #82B3D3;
+}
+
+.social:hover {
+  color: #68A2CA;
+}
+
+.social:focus {
+  color: #68A2CA;
+}
+
+.social:active {
+  color: #68A2CA4D;
+}
