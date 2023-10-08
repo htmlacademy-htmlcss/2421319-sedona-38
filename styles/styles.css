@@ -24,6 +24,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.main-index {
+  text-align: center;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -33,11 +37,16 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  background-image: url("../images/hero.jpg");
-  background-size: 100% auto;
+.navigation-link-current {
+  border-bottom: #756257 solid 2px;
+}
+
+.hero {
+  background-image: url("../images/hero_frame.png"), url("../images/hero.jpg");
+  background-position: bottom, center;
+  background-size: contain, cover;
   background-repeat: no-repeat;
-  text-align: center;
+  background-color: #82B3D3;
 }
 
 .subtitle {
@@ -75,8 +84,9 @@ body {
 .subscribe {
   color: #ffffff;
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #82B3D3;
 }
 
 .subscribe-inner {
@@ -94,8 +104,9 @@ body {
 .filter {
   color: #ffffff;
   background-image: url("../images/filter.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #82B3D3;
 }
 
 .filter-title {
