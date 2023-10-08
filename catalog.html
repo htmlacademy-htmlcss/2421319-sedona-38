@@ -25,14 +25,14 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
+              <span class="visually-hidden search">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
+              <span class="visually-hidden favorite">
                 Избранное
               </span>
               <span class="likes">
@@ -41,7 +41,7 @@
               </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button button-basic" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -136,8 +136,8 @@
             -->
           </fieldset>
 
-          <button class="button button-filter" type="submit">Показать</button>
-          <button class="reset" type="reset">Сбросить</button>
+          <button class="button" type="submit">Применить</button>
+          <button class="button reset" type="reset">Сбросить</button>
         </form>
       </section>
 
@@ -154,7 +154,7 @@
           <option value="popular">Сначала популярное</option>
         </select>
         <div class="view">
-          <a class="button-view button-active" href="#">
+          <a class="button-view view-active" href="#">
             <span class="visually-hidden">
               Показать карточки
             </span>
@@ -192,12 +192,12 @@
                 </p>
               </li>
               <li class="card-content-item">
-                <a class="card-button" href="#">
+                <a class="card-button button button-basic" href="#">
                   подробнее
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="card-button" type="button">
+                <button class="button" type="button">
                   в избранное
                 </button>
               </li>
@@ -235,12 +235,12 @@
                 </p>
               </li>
               <li class="card-content-item">
-                <a class="card-button" href="#">
+                <a class="card-button button button-basic" href="#">
                   подробнее
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="card-button button-click" type="button">
+                <button class="button button-active" type="button">
                   в избранном
                 </button>
               </li>
@@ -278,12 +278,12 @@
                 </p>
               </li>
               <li class="card-content-item">
-                <a class="card-button" href="#">
+                <a class="card-button button button-basic" href="#">
                   подробнее
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="card-button" type="button">
+                <button class="button" type="button">
                   в избранное
                 </button>
               </li>
@@ -321,12 +321,12 @@
                 </p>
               </li>
               <li class="card-content-item">
-                <a class="card-button" href="#">
+                <a class="card-button button button-basic" href="#">
                   подробнее
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="card-button" type="button">
+                <button class="button" type="button">
                   в избранное
                 </button>
               </li>
@@ -380,7 +380,7 @@
             </span>
           </label>
           <input class="field" placeholder="Ваш e-mail" type="email" id="email" required>
-          <button class="button subscribe-button" type="submit">
+          <button class="button button-basic" type="submit">
             Подписаться
           </button>
         </form>
