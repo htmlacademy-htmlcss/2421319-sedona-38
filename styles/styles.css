@@ -23,11 +23,11 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
-
+ /*
 .visually-hidden {
   display: none;
 }
-
+*/
 .main-index {
   text-align: center;
 }
@@ -45,7 +45,7 @@ body {
   border-bottom: #756257 solid 2px;
 }
 
-.search {
+.search {    /* пропадает вместе с visually-hidden */
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
 }
@@ -76,13 +76,32 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
-  padding: 8px 50px; /* ?? */
+  padding: 8px 50px;
   border: none;
   border-radius: 4px;
 }
 
+.card-button {
+  padding: 8px 18px;
+  min-width: 140px;
+}
+
+a.card-button {
+  padding: 8px 26px;
+}
+
 .button-basic {
   background-color: #756157;
+}
+
+a.button-big {
+  padding: 16px 50px;
+  height: 52px;
+}
+
+.button-field {
+  height: 52px;
+  border-radius: 0 4px 4px 0;
 }
 
 .button-active {
@@ -96,9 +115,8 @@ body {
 .hero {
   background-image: url("../images/hero_frame.png"), url("../images/hero.jpg");
   background-position: bottom, center;
-  background-size: contain, cover;
   background-repeat: no-repeat;
-  background-color: #82B3D3;
+  max-width: 1200px 1200px;
 }
 
 .subtitle {
@@ -154,22 +172,40 @@ body {
 .subscribe {
   color: #ffffff;
   background-image: url("../images/subscribe.jpg");
-  background-size: cover;
+  background-position: center; /* не работает c фиксированной шириной и background-color */
   background-repeat: no-repeat;
   background-color: #82B3D3;
+  max-width: 1200px;
+  height: 415px;
+}
+
+.field {
+  color: #000000;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 14px 20px;
+  width: 452px;
 }
 
 .subscribe-inner {
   color: #000000;
+  text-align: center;
   background: none;
 }
 
 .filter {
   color: #ffffff;
   background-image: url("../images/filter.jpg");
+  background-position: center; /* не работает c фиксированной шириной и background-color */
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
+  max-width: 1200px;
 }
 
 .filter-title {
@@ -210,10 +246,40 @@ body {
   text-transform: none;
 }
 
+.stars-4 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 80px;
+  height: 18px;
+}
+
+.stars-3 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 60px;
+  height: 18px;
+}
+
+.stars-2 {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 40px;
+  height: 18px;
+}
+
 .rating {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  width: 140px;
+}
+
+.rating-content {
+  padding-top: 8px;
+  padding-bottom: 9px;
 }
 
 .pagination-link {
@@ -223,6 +289,9 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #82B3D3;
+  border-radius: 4px;
+  padding-top: 11.36px;
+  padding-bottom: 12.64px;
 }
 
 .pagination-active {
@@ -231,14 +300,13 @@ body {
 }
 
 .pagination-page {
+  background: none;
   font-size: 22px;
   line-height: 26px;
+  padding-top: 16.36px;
+  padding-bottom: 17.64px;
 }
-/*
-.field {
-  padding: 12px 20px;
-}
-*/
+
 .social {
   color: #82B3D3;
 }

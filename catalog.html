@@ -24,15 +24,15 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden search">
+            <a class="navigation-link search" href="#">
+              <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden favorite">
+            <a class="navigation-link favorite" href="#">
+              <span class="visually-hidden">
                 Избранное
               </span>
               <span class="likes">
@@ -197,7 +197,7 @@
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="button" type="button">
+                <button class="card-button button" type="button">
                   в избранное
                 </button>
               </li>
@@ -206,8 +206,8 @@
                   <span class="visually-hidden">Четырехзвездочная гостиница</span>
                 </p>
               </li>
-              <li class="card-content-item">
-                <p class="rating">
+              <li class="card-content-item rating">
+                <p class="rating-content">
                   Рейтинг: 8,5
                 </p>
               </li>
@@ -240,7 +240,7 @@
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="button button-active" type="button">
+                <button class="card-button button button-active" type="button">
                   в избранном
                 </button>
               </li>
@@ -249,8 +249,8 @@
                   <span class="visually-hidden">Четырехзвездочная гостиница</span>
                 </p>
               </li>
-              <li class="card-content-item">
-                <p class="rating">
+              <li class="card-content-item rating">
+                <p class="rating-content">
                   Рейтинг: 9,2
                 </p>
               </li>
@@ -283,7 +283,7 @@
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="button" type="button">
+                <button class="card-button button" type="button">
                   в избранное
                 </button>
               </li>
@@ -292,8 +292,8 @@
                   <span class="visually-hidden">Трехзвездочная гостиница</span>
                 </p>
               </li>
-              <li class="card-content-item">
-                <p class="rating">
+              <li class="card-content-item rating">
+                <p class="rating-content">
                   Рейтинг: 6,9
                 </p>
               </li>
@@ -326,7 +326,7 @@
                 </a>
               </li>
               <li class="card-content-item">
-                <button class="button" type="button">
+                <button class="card-button button" type="button">
                   в избранное
                 </button>
               </li>
@@ -335,8 +335,8 @@
                   <span class="visually-hidden">Двухзвездочная гостиница</span>
                 </p>
               </li>
-              <li class="card-content-item">
-                <p class="rating">
+              <li class="card-content-item rating">
+                <p class="rating-content">
                   Рейтинг: 5,0
                 </p>
               </li>
@@ -358,10 +358,10 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span class="pagination-page">...</span>
+            <span class="pagination-link pagination-page">...</span>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link twodigit" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -380,7 +380,7 @@
             </span>
           </label>
           <input class="field" placeholder="Ваш e-mail" type="email" id="email" required>
-          <button class="button button-basic" type="submit">
+          <button class="button button-basic button-field" type="submit">
             Подписаться
           </button>
         </form>
