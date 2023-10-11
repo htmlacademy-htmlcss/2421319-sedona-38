@@ -22,14 +22,19 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #FFFFFF;
-}
- /*
-.visually-hidden {
-  display: none;
-}
-*/
-.main-index {
   text-align: center;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation-link {
@@ -45,14 +50,19 @@ body {
   border-bottom: #756257 solid 2px;
 }
 
-.search {    /* пропадает вместе с visually-hidden */
+.search {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding: 1px 0px 0px 1px;
 }
 
 .favorite {
   background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
+  width: 18px;
+  height: 17px;
 }
 
 .likes {
@@ -79,6 +89,7 @@ body {
   padding: 8px 50px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .card-button {
@@ -86,7 +97,7 @@ body {
   min-width: 140px;
 }
 
-a.card-button {
+.card-button {
   padding: 8px 26px;
 }
 
@@ -94,7 +105,7 @@ a.card-button {
   background-color: #756157;
 }
 
-a.button-big {
+.button-big {
   padding: 16px 50px;
   height: 52px;
 }
@@ -115,8 +126,9 @@ a.button-big {
 .hero {
   background-image: url("../images/hero_frame.png"), url("../images/hero.jpg");
   background-position: bottom, center;
+  background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1200px 1200px;
+  background-color: #82B3D3;
 }
 
 .subtitle {
@@ -172,11 +184,9 @@ a.button-big {
 .subscribe {
   color: #ffffff;
   background-image: url("../images/subscribe.jpg");
-  background-position: center; /* не работает c фиксированной шириной и background-color */
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
-  max-width: 1200px;
-  height: 415px;
 }
 
 .field {
@@ -189,7 +199,6 @@ a.button-big {
   border: none;
   border-radius: 4px 0 0 4px;
   padding: 14px 20px;
-  width: 452px;
 }
 
 .subscribe-inner {
@@ -201,11 +210,9 @@ a.button-big {
 .filter {
   color: #ffffff;
   background-image: url("../images/filter.jpg");
-  background-position: center; /* не работает c фиксированной шириной и background-color */
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
-  max-width: 1200px;
 }
 
 .filter-title {
@@ -274,7 +281,7 @@ a.button-big {
   text-align: center;
   background-color: #F2F2F2;
   border-radius: 4px;
-  width: 140px;
+  min-width: 140px;
 }
 
 .rating-content {
@@ -323,37 +330,21 @@ a.button-big {
   color: #68A2CA4D;
 }
 
-.phone {
+.changecolor {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
 }
 
-.phone:hover {
+.changecolor:hover {
   color: #756157;
 }
 
-.phone:focus {
+.changecolor:focus {
   color: #756157;
 }
 
-.phone:active {
-  color: #7561574D;
-}
-
-.logo-footer {
-  color: #000000;
-}
-
-.logo-footer:hover {
-  color: #756157;
-}
-
-.logo-footer:focus {
-  color: #756157;
-}
-
-.logo-footer:active {
+.changecolor:active {
   color: #7561574D;
 }
