@@ -287,22 +287,46 @@ body {
 }
 
 .filter {
+  display: flex;
   color: #ffffff;
   background-image: url("../images/filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
+  min-height: 412px;
+  margin-top: -10px;
+  flex-direction: column;
+  padding: 35px 70px 70px;
 }
 
 .filter-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  margin: 0;
+  text-align: start;
+  padding-bottom: 8px;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 60px;
+}
+
+.catalog-result {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
 }
 
 .catalog-filter-title {
@@ -310,6 +334,10 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .option-point {
@@ -321,6 +349,17 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.card-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  list-style-type: none;
 }
 
 .card-link {
@@ -368,6 +407,11 @@ body {
   padding-bottom: 9px;
 }
 
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -400,11 +444,16 @@ body {
   padding: 40px 70px 30px;
 }
 
+.logo-footer {
+  padding: 8.5px 0 8.6px 41.5px;
+}
+
 .social-list {
   display: flex;
   justify-content: space-around;
   width: 142px;
   list-style-type: none;
+  align-items: flex-start;
 }
 
 .social {
