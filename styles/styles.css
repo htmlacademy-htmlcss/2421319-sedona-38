@@ -33,6 +33,13 @@ body {
   background-color: #FFFFFF;
   flex-direction: column;
   box-shadow: 0px 0px 15px 0px #00000033;
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -49,6 +56,7 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  height: 64px;  /* при установке min-height сдвигается hero */
   margin: 0 auto;
 }
 
@@ -58,18 +66,12 @@ body {
 
 .navigation-list {
   display: flex;
-  justify-content: space-around;
   list-style-type: none;
-}
-
-.navigation-user {
-  display: flex;
-  justify-content: space-around;
-  min-width: 268px;
-  margin-left: auto;
+  margin: 0;
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -79,22 +81,51 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 268px;
+  margin-left: auto;
+}
+
+.navigation-link-user {
+  display: block;
+  min-width: 16px;
+  min-height: 22px;
+  text-decoration: none;
+}
+
+.navigation-icon {
+  padding: 22px 12px;
+}
+
 .navigation-link-current {
   border-bottom: #756257 solid 2px;
   position: relative;
 }
 
-.search {
+.search:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: block;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
 }
 
-.favorite {
+.favorite:before {
+  content: "";
+  width: 18px;
+  height: 17px;
+  display: block;
   background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
 }
 
 .likes {
+  position: relative;
+  top: -34px;
+  left: 6px;
   color: #ffffff;
   font-size: 10px;
   font-weight: 400;
@@ -115,10 +146,14 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
-  padding: 8px 50px;
+  padding: 8px 34px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.navigation-button {
+  padding: 14px 0 14px 20px;
 }
 
 .card-button {
@@ -136,11 +171,9 @@ body {
 
 .button-big {
   padding: 16px 50px;
-  height: 52px;
 }
 
 .button-field {
-  height: 52px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -158,11 +191,10 @@ body {
   background-repeat: no-repeat;
   background-color: #82B3D3;
   min-height: 485px;
-  margin-top: -10px;
 }
 
 .hero-img {
-  padding-top: 51px;
+  padding: 51px 370px 78px 370px;
 }
 
 .subtitle {
@@ -179,22 +211,45 @@ body {
   line-height: 26px;
   margin: 0;
   padding-bottom: 54px;
+  color: #333333;
 }
 
-.item-title {
+.advantages-item {
+  padding: 112.5px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 385px;
+  position: relative;
+  display: inline-block;
+}
+
+.advantages-item:after {
+  content: "";
+  background: #0000004D;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 184.5px;
+  right: 170px;
+}
+
+.advantages-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0 25px 30px;
 }
 
-.advantages {
-  display: flex;
-  flex-direction: column;
+.advantages-item-content {
+  margin: 0;
+  padding-top: 30px;
 }
 
 .advantages-list-title {
-  padding: 69px 0 69px 0;
+  padding: 69px 274px;
+  margin-bottom: 21px;
 }
 
 .advantages-title {
@@ -206,24 +261,38 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .advantages-key {
+  padding: 103px 85px;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-key:after {
+  content: "";
+  background: #FFFFFF4D;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  bottom: 195px;
+  right: 170px;
 }
 
 .advantages-color {
   background-color: #83b3d333;
 }
 
-.welcome {
-  display: flex;
-  flex-direction: column;
+.welcome-list-title {
+  padding: 64px 347px;
 }
 
-.welcome-list-title {
-  padding: 64px 0 64px 0;
+.welcome-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 85px;
 }
 
 .welcome-color {
@@ -234,28 +303,51 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-.home {
+.welcome-item-title {
+  padding: 30px 0 30px;
+  margin: 0;
+}
+
+.welcome-item-content {
+  padding: 0;
+  margin: 0;
+}
+
+.home:before {
+  content: "";
+  width: 75px;
+  height: 72px;
+  display: block;
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.food {
+.food:before {
+  content: "";
+  width: 75px;
+  height: 72px;
+  display: block;
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.gift {
+.gift:before {
+  content: "";
+  width: 75px;
+  height: 76px;
+  display: block;
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .booking {
-  padding: 96px 0 96px 0;
+  padding: 96px 304px;
 }
 
 .subscribe {
@@ -264,8 +356,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82B3D3;
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 200px 104px;
+}
+
+.subscribe-content {
+  color: #ffffff;
 }
 
 .field {
@@ -278,6 +373,7 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   padding: 14px 20px;
+  min-width: 452px;
 }
 
 .subscribe-inner {
@@ -294,7 +390,6 @@ body {
   background-repeat: no-repeat;
   background-color: #82B3D3;
   min-height: 412px;
-  margin-top: -10px;
   flex-direction: column;
   padding: 35px 70px 70px;
 }
@@ -310,7 +405,6 @@ body {
 
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
   font-size: 16px;
   line-height: 21px;
   margin: 0;
@@ -325,7 +419,6 @@ body {
 
 .catalog-result {
   display: flex;
-  flex-direction: row;
   padding-bottom: 40px;
 }
 
@@ -400,6 +493,7 @@ body {
   background-color: #F2F2F2;
   border-radius: 4px;
   min-width: 140px;
+  color: #333333;
 }
 
 .rating-content {
@@ -440,8 +534,7 @@ body {
 .footer-page {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
 }
 
 .logo-footer {
@@ -450,14 +543,16 @@ body {
 
 .social-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   width: 142px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
-  align-items: flex-start;
 }
 
 .social {
   color: #82B3D3;
+  padding: 11.5px 13px;
 }
 
 .social:hover {
@@ -473,7 +568,8 @@ body {
 }
 
 .phone {
-  width: 720px;
+  min-width: 720px;
+  padding: 5px 0;
 }
 
 .changecolor {
