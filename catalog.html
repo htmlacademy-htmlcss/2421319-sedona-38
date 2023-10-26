@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -57,7 +59,7 @@
           </h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link homepage" href="index.html">
+              <a class="homepage" href="index.html">
                 <span class="visually-hidden">Главная страница</span>
               </a>
             </li>
@@ -69,7 +71,7 @@
           </ul>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter">
+            <fieldset class="filter-item">
               <legend class="catalog-filter-title">
                 Инфраструктура:
               </legend>
@@ -94,7 +96,7 @@
                 </li>
             </fieldset>
 
-            <fieldset class="catalog-filter">
+            <fieldset class="filter-item">
               <legend class="catalog-filter-title">
                 Тип жилья:
               </legend>
@@ -119,17 +121,21 @@
                 </li>
             </fieldset>
 
-            <fieldset class="slider">
+            <fieldset class="catalog-slider">
               <legend class="slider-title catalog-filter-title">
                 Стоимость, ₽:
               </legend>
               <label class="slider-from">
-                <input class="slider-min" type="number" placeholder="0" value="0">
-                от
+                <input class="slider slider-min" type="number" placeholder="0" value="0">
+                <span class="slider-placeholder">
+                  от
+                </span>
               </label>
               <label class="slider-to">
-                <input class="slider-max" type="number" placeholder="9000" value="9000">
-                до
+                <input class="slider slider-max" type="number" placeholder="9000" value="9000">
+                <span class="slider-placeholder">
+                  до
+                </span>
               </label>
               <!--
               <div class="range">
@@ -138,9 +144,9 @@
               </div>
                -->
             </fieldset>
-            <div class="filter-button">
-              <button class="button" type="submit">Применить</button>
-              <button class="button reset" type="reset">Сбросить</button>
+            <div class="catalog-filter-button">
+              <button class="button filter-button" type="submit">Применить</button>
+              <button class="button filter-button reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -196,7 +202,7 @@
                   </p>
                 </li>
                 <li class="card-content-item card-content-button">
-                  <a class="card-button button button-basic" href="#">
+                  <a class="card-link-button button button-basic" href="#">
                     подробнее
                   </a>
                   <button class="card-button button" type="button">
@@ -233,7 +239,7 @@
                   </p>
                 </li>
                 <li class="card-content-item card-content-button">
-                  <a class="card-button button button-basic" href="#">
+                  <a class="card-link-button button button-basic" href="#">
                     подробнее
                   </a>
                   <button class="card-button button button-active" type="button">
@@ -270,7 +276,7 @@
                   </p>
                 </li>
                 <li class="card-content-item card-content-button">
-                  <a class="card-button button button-basic" href="#">
+                  <a class="card-link-button button button-basic" href="#">
                     подробнее
                   </a>
                   <button class="card-button button" type="button">
@@ -307,7 +313,7 @@
                   </p>
                 </li>
                 <li class="card-content-item card-content-button">
-                  <a class="card-button button button-basic" href="#">
+                  <a class="card-link-button button button-basic" href="#">
                     подробнее
                   </a>
                   <button class="card-button button" type="button">
