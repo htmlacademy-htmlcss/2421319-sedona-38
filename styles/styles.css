@@ -608,8 +608,14 @@ body {
   color: #0000004D;
 }
 
+.slider::-webkit-outer-spin-button,
+.slider::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .range {
-  margin: 37px 0 0;
+  margin: 34px 0 0;
 }
 
 .range-scale {
@@ -670,7 +676,7 @@ body {
 .catalog-filter-list {
   display: grid;
   margin: 0;
-  gap: 16px;
+  gap: 19px;
   list-style-type: none;
   padding: 0;
   text-align: left;
@@ -689,12 +695,50 @@ body {
 }
 
 .option {
+  position: relative;
+  display: block;
+  padding-left: 36px;
   cursor: pointer;
 }
 
 .option-point {
-  line-height: 23px;
   cursor: pointer;
+}
+
+.option-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.radio {
+  border-radius: 50%;
+}
+
+.option-point[type="checkbox"]:checked + .option-mark::before,
+.option-point[type="checkbox"]:checked + .option-mark::after {
+  position: absolute;
+  background-image: url(../images/mark.svg);
+  width: 12.2px;
+  height: 9.9px;
+  top: 5px;
+  left: 4px;
+  content: "";
+}
+
+.option-point[type="radio"]:checked + .option-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .result {
@@ -789,7 +833,7 @@ body {
   border: 2px solid #000000;
 }
 
-.view-active {
+.view-current {
   border: 2px solid #000000;
 }
 
