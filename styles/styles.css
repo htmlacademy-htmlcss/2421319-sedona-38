@@ -1116,12 +1116,12 @@ body {
   margin: 0 0 64px;
   text-align: left;
 }
-/*
+
 .modal-container-close {
   display: none;
 }
- */
- .modal-close-button {
+
+.modal-close-button {
   position: absolute;
   top: 64px;
   right: 51px;
