@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="navigation-user-item navigation-button">
-              <a class="button button-basic" href="#">Хочу сюда!</a>
+              <a class="button button-basic" href="#search-hotel">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -109,7 +109,7 @@
         <section class="booking" data-test="search">
           <h2 class="booking-title title">Заинтересовались?</h2>
           <p class="booking-content content">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-basic button-big" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button button-basic button-big" href="#search-hotel">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribe" data-test="subscribe">
@@ -119,7 +119,7 @@
             <label for="email">
               <span class="visually-hidden">Ваш e-mail</span>
             </label>
-            <input class="field" placeholder="Ваш e-mail" type="email" id="email" required>
+            <input class="field" placeholder="Ваш e-mail" name="email" type="email" id="email" required>
             <button class="button button-big button-field" type="submit">Подписаться</button>
           </form>
         </section>
@@ -157,11 +157,12 @@
           </a>
       </footer>
 
-      <div class="modal-container modal-container-close">
+      <div class="modal-container modal-container-close" id="search-hotel" data-test="modal">
+        <a class="modal-area" href="#"></a>
         <div class="modal">
-          <button class="modal-close-button" type="button">
+          <a class="modal-close-button" href="#">
             <span class="visually-hidden">Закрыть</span>
-          </button>
+          </a>
           <section class="modal-content">
             <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
             <form class="subscribe-modal-form" action="https://echo.htmlacademy.ru/" method="post">
